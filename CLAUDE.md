@@ -18,8 +18,9 @@ start tictactoe.html
 
 Remote: `https://github.com/aleksjh99/tic-tac-toe`
 
-**After every change, always commit and push to GitHub.** No work should be left uncommitted.
+**After every change, always commit and push — both locally (Git) and to GitHub.** No work should be left uncommitted.
 
 - Stage only the relevant file(s) — never `git add -A` blindly
 - Write short, clear commit messages in plain language, e.g. `Add restart button`, `Fix win detection bug`
-- A hook automatically runs `git push` after every `git commit`, so no manual push is needed
+- A Claude Code hook auto-runs `git push` after every `git commit` made by Claude
+- A Git post-commit hook (`.git/hooks/post-commit`) auto-runs `git push` when committing in Git Bash
